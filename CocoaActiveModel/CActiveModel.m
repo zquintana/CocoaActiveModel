@@ -178,7 +178,7 @@
 
 - (NSString *)description
 {
-    return [self._attributes description];
+    return [NSString stringWithFormat:@"%@ %@", [self class], [self._attributes description]];
 }
 
 - (void)dealloc
