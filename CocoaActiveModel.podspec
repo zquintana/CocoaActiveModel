@@ -6,10 +6,10 @@
 #
 Pod::Spec.new do |s|
   s.name         = "CocoaActiveModel"
-  s.version      = "0.0.1"
-  s.license      = "FreeBSD"
+  s.version      = "0.0.2"
+  s.license      = { :type => "FreeBSD", :file => "LICENSE" }
   s.summary      = "A ActiceRecord style data modeling for Objective C."
-  s.homepage     = "http://www.github.com/zquintana/CocoaActiveModel"
+  s.homepage     = "https://www.github.com/zquintana/CocoaActiveModel"
   s.author       = { "Zachary Quintana" => "zach.quintana@gmail.com" }
   s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git", :tag => "0.0.1" }
   s.source_files = 'CocoaActiveModel', 'CocoaActiveModel/**/*.{h,m}'
