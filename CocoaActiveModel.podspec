@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "CocoaActiveModel"
-  s.version      = "0.0.3"
+  s.version      = "0.0.1"
   s.license      = { :type => "FreeBSD", :file => "LICENSE" }
   s.summary      = "A ActiceRecord style data modeling for Objective C."
   s.homepage     = "https://www.github.com/zquintana/CocoaActiveModel"
