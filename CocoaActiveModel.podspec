@@ -14,13 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git" }
   
   s.requires_arc = false
-  s.ios.deployment_target = '5.0'
-  s.osx.deployment_target = '10.7'
+  s.platform = :ios, '5.0'
 
-  s.default_subspec = 'Core'
-
-  s.subspec 'Core' do |cs|
-    cs.source_files =  'Code/*.h'
-    cs.header_dir   =  'CocoaActiveModel'
-  end
+  s.source_files = "Code/**/*.{h,m}"
 end
