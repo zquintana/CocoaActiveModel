@@ -39,8 +39,8 @@
 		B6722680168CC5A3000F2EA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6722682168CC5A3000F2EA0 /* CocoaActiveModelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaActiveModelTests.h; sourceTree = "<group>"; };
 		B6722683168CC5A3000F2EA0 /* CocoaActiveModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaActiveModelTests.m; sourceTree = "<group>"; };
-		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CActiveModel.h; path = Core/CActiveModel.h; sourceTree = "<group>"; };
-		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CActiveModel.m; path = Core/CActiveModel.m; sourceTree = "<group>"; };
+		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CActiveModel.h; sourceTree = "<group>"; };
+		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CActiveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,18 +65,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B668F45A1715F8970091EE0F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B6722697168CC5C8000F2EA0 /* CActiveModel.h */,
-				B6722698168CC5C8000F2EA0 /* CActiveModel.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
 		B6722657168CC5A3000F2EA0 = {
 			isa = PBXGroup;
 			children = (
+				B6722668168CC5A3000F2EA0 /* Support */,
 				B6722696168CC5AF000F2EA0 /* Code */,
 				B672267C168CC5A3000F2EA0 /* Tests */,
 				B6722664168CC5A3000F2EA0 /* Frameworks */,
@@ -132,9 +124,9 @@
 		B6722696168CC5AF000F2EA0 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				B6722668168CC5A3000F2EA0 /* Support */,
-				B668F45A1715F8970091EE0F /* Core */,
 				B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */,
+				B6722697168CC5C8000F2EA0 /* CActiveModel.h */,
+				B6722698168CC5C8000F2EA0 /* CActiveModel.m */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -344,8 +336,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -367,8 +359,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
