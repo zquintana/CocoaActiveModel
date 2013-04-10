@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Core/**/*.{h,m}'
   s.header_dir   = 'CocoaActiveModel'
   s.requires_arc = false
-  s.ios.deployment_target = '5.0'
-  s.osx.deployment_target = '10.7'
+  s.platform     = :ios
   s.framework    = 'Foundation'
   s.preserve_paths  = "libCocoaActiveModel.a"
 end
