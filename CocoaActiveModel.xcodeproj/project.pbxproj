@@ -31,16 +31,16 @@
 /* Begin PBXFileReference section */
 		B6722662168CC5A3000F2EA0 /* libCocoaActiveModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaActiveModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722665168CC5A3000F2EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaActiveModel-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CocoaActiveModel.h; path = Core/CocoaActiveModel.h; sourceTree = SOURCE_ROOT; };
+		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaActiveModel-Prefix.pch"; sourceTree = "<group>"; };
+		B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaActiveModel.h; sourceTree = "<group>"; };
 		B6722673168CC5A3000F2EA0 /* CocoaActiveModelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaActiveModelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722674168CC5A3000F2EA0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B672267E168CC5A3000F2EA0 /* CocoaActiveModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaActiveModelTests-Info.plist"; sourceTree = "<group>"; };
 		B6722680168CC5A3000F2EA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6722682168CC5A3000F2EA0 /* CocoaActiveModelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaActiveModelTests.h; sourceTree = "<group>"; };
 		B6722683168CC5A3000F2EA0 /* CocoaActiveModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaActiveModelTests.m; sourceTree = "<group>"; };
-		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CActiveModel.h; path = Core/CActiveModel/CActiveModel.h; sourceTree = SOURCE_ROOT; };
-		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CActiveModel.m; path = Core/CActiveModel/CActiveModel.m; sourceTree = SOURCE_ROOT; };
+		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CActiveModel.h; path = Core/CActiveModel.h; sourceTree = "<group>"; };
+		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CActiveModel.m; path = Core/CActiveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +65,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B668F45A1715F8970091EE0F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B6722697168CC5C8000F2EA0 /* CActiveModel.h */,
+				B6722698168CC5C8000F2EA0 /* CActiveModel.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		B6722657168CC5A3000F2EA0 = {
 			isa = PBXGroup;
 			children = (
-				B6722667168CC5A3000F2EA0 /* CocoaActiveModel */,
-				B672267C168CC5A3000F2EA0 /* CocoaActiveModelTests */,
+				B6722696168CC5AF000F2EA0 /* Code */,
+				B672267C168CC5A3000F2EA0 /* Tests */,
 				B6722664168CC5A3000F2EA0 /* Frameworks */,
 				B6722663168CC5A3000F2EA0 /* Products */,
 			);
@@ -93,32 +102,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B6722667168CC5A3000F2EA0 /* CocoaActiveModel */ = {
-			isa = PBXGroup;
-			children = (
-				B6722696168CC5AF000F2EA0 /* Core */,
-				B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */,
-				B6722668168CC5A3000F2EA0 /* Supporting Files */,
-			);
-			path = CocoaActiveModel;
-			sourceTree = "<group>";
-		};
-		B6722668168CC5A3000F2EA0 /* Supporting Files */ = {
+		B6722668168CC5A3000F2EA0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = Support;
 			sourceTree = "<group>";
 		};
-		B672267C168CC5A3000F2EA0 /* CocoaActiveModelTests */ = {
+		B672267C168CC5A3000F2EA0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				B6722682168CC5A3000F2EA0 /* CocoaActiveModelTests.h */,
 				B6722683168CC5A3000F2EA0 /* CocoaActiveModelTests.m */,
 				B672267D168CC5A3000F2EA0 /* Supporting Files */,
 			);
-			path = CocoaActiveModelTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		B672267D168CC5A3000F2EA0 /* Supporting Files */ = {
@@ -130,13 +129,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B6722696168CC5AF000F2EA0 /* Core */ = {
+		B6722696168CC5AF000F2EA0 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				B6722697168CC5C8000F2EA0 /* CActiveModel.h */,
-				B6722698168CC5C8000F2EA0 /* CActiveModel.m */,
+				B6722668168CC5A3000F2EA0 /* Support */,
+				B668F45A1715F8970091EE0F /* Core */,
+				B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */,
 			);
-			name = Core;
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,15 +342,19 @@
 		B6722688168CC5A3000F2EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "$(SRCROOT)/Build";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = ../Headers/CocoaActiveModel/Private;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/CocoaActiveModel;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SYMROOT = "$(SRCROOT)/Build/Products";
@@ -361,15 +365,19 @@
 		B6722689168CC5A3000F2EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "$(SRCROOT)/Build";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = ../Headers/CocoaActiveModel/Private;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/CocoaActiveModel;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SYMROOT = "$(SRCROOT)/Build/Products";
