@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary      = "A ActiceRecord style data modeling for Objective C."
   s.homepage     = "https://www.github.com/zquintana/CocoaActiveModel"
   s.author       = { "Zachary Quintana" => "zach.quintana@gmail.com" }
-  s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git" }
+  s.source       = { :git => "https://github.com/zquintana/CocoaActiveModel.git" }
   
   s.source_files = "Code/*.{h,m}"
   s.requires_arc = false
