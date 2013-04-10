@@ -12,6 +12,13 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.github.com/zquintana/CocoaActiveModel"
   s.author       = { "Zachary Quintana" => "zach.quintana@gmail.com" }
   s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git", :tag => "0.0.1" }
-  s.source_files = 'CocoaActiveModel', 'CocoaActiveModel/**/*.{h,m}'
+  s.source_files = 'Core/**/*.{h,m}'
+  s.public_header_files = 'CocoaActiveModel/*.h'
   s.requires_arc = false
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.7'
+
+  #s.subspec 'Core' do |cs|
+  #  cs.source_files = = 'CocoaActiveModel', 'CocoaActiveModel/**/*.{h,m}'
+  #end
 end

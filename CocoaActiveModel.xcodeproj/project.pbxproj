@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B6722666168CC5A3000F2EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6722665168CC5A3000F2EA0 /* Foundation.framework */; };
 		B6722675168CC5A3000F2EA0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6722674168CC5A3000F2EA0 /* SenTestingKit.framework */; };
-		B6722677168CC5A3000F2EA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6722676168CC5A3000F2EA0 /* UIKit.framework */; };
 		B6722678168CC5A3000F2EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6722665168CC5A3000F2EA0 /* Foundation.framework */; };
 		B672267B168CC5A3000F2EA0 /* libCocoaActiveModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6722662168CC5A3000F2EA0 /* libCocoaActiveModel.a */; };
 		B6722681168CC5A3000F2EA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B672267F168CC5A3000F2EA0 /* InfoPlist.strings */; };
@@ -32,17 +31,16 @@
 /* Begin PBXFileReference section */
 		B6722662168CC5A3000F2EA0 /* libCocoaActiveModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaActiveModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722665168CC5A3000F2EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaActiveModel-Prefix.pch"; sourceTree = "<group>"; };
-		B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaActiveModel.h; sourceTree = "<group>"; };
+		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CocoaActiveModel-Prefix.pch"; path = "../CocoaActiveModel-Prefix.pch"; sourceTree = "<group>"; };
+		B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CocoaActiveModel.h; path = ../Core/CocoaActiveModel.h; sourceTree = "<group>"; };
 		B6722673168CC5A3000F2EA0 /* CocoaActiveModelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaActiveModelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722674168CC5A3000F2EA0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B6722676168CC5A3000F2EA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B672267E168CC5A3000F2EA0 /* CocoaActiveModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaActiveModelTests-Info.plist"; sourceTree = "<group>"; };
 		B6722680168CC5A3000F2EA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6722682168CC5A3000F2EA0 /* CocoaActiveModelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaActiveModelTests.h; sourceTree = "<group>"; };
 		B6722683168CC5A3000F2EA0 /* CocoaActiveModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaActiveModelTests.m; sourceTree = "<group>"; };
-		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CActiveModel.h; sourceTree = "<group>"; };
-		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CActiveModel.m; sourceTree = "<group>"; };
+		B6722697168CC5C8000F2EA0 /* CActiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CActiveModel.h; path = ../Core/CActiveModel/CActiveModel.h; sourceTree = "<group>"; };
+		B6722698168CC5C8000F2EA0 /* CActiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CActiveModel.m; path = ../Core/CActiveModel/CActiveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6722675168CC5A3000F2EA0 /* SenTestingKit.framework in Frameworks */,
-				B6722677168CC5A3000F2EA0 /* UIKit.framework in Frameworks */,
 				B6722678168CC5A3000F2EA0 /* Foundation.framework in Frameworks */,
 				B672267B168CC5A3000F2EA0 /* libCocoaActiveModel.a in Frameworks */,
 			);
@@ -92,7 +89,6 @@
 			children = (
 				B6722665168CC5A3000F2EA0 /* Foundation.framework */,
 				B6722674168CC5A3000F2EA0 /* SenTestingKit.framework */,
-				B6722676168CC5A3000F2EA0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -348,7 +344,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/CocoaActiveModel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaActiveModel/CocoaActiveModel-Prefix.pch";
+				GCC_PREFIX_HEADER = "CocoaActiveModel-Prefix.pch";
 				OBJROOT = "$(SRCROOT)/Build";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -367,7 +363,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/CocoaActiveModel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaActiveModel/CocoaActiveModel-Prefix.pch";
+				GCC_PREFIX_HEADER = "CocoaActiveModel-Prefix.pch";
 				OBJROOT = "$(SRCROOT)/Build";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
