@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.summary      = "A ActiceRecord style data modeling for Objective C."
   s.homepage     = "https://www.github.com/zquintana/CocoaActiveModel"
   s.author       = { "Zachary Quintana" => "zach.quintana@gmail.com" }
-  s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git", :tag => "v#{spec.version}" }
+  s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git", :tag => "v#{s.version}" }
   s.source_files = 'Core/**/*.{h,m}'
   s.public_header_files = 'CocoaActiveModel/*.h'
   s.requires_arc = false
