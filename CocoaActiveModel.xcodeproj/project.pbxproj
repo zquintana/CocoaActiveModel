@@ -336,7 +336,7 @@
 			buildSettings = {
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/CocoaActiveModel.dst;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -362,7 +362,7 @@
 			buildSettings = {
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/CocoaActiveModel.dst;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
