@@ -334,22 +334,25 @@
 		B6722688168CC5A3000F2EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OBJROOT = "$(SRCROOT)/Build";
+				OBJROOT = "$(SYMROOT)";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SYMROOT = "$(SRCROOT)/Build/Products";
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -357,22 +360,25 @@
 		B6722689168CC5A3000F2EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/CocoaActiveModel.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OBJROOT = "$(SRCROOT)/Build";
+				OBJROOT = "$(SYMROOT)";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CocoaActiveModel;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SYMROOT = "$(SRCROOT)/Build/Products";
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
