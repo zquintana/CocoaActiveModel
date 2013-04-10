@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		B6722662168CC5A3000F2EA0 /* libCocoaActiveModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaActiveModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722665168CC5A3000F2EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CocoaActiveModel-Prefix.pch"; path = "../CocoaActiveModel-Prefix.pch"; sourceTree = "<group>"; };
+		B6722669168CC5A3000F2EA0 /* CocoaActiveModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaActiveModel-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CocoaActiveModel.h; path = Core/CocoaActiveModel.h; sourceTree = SOURCE_ROOT; };
 		B6722673168CC5A3000F2EA0 /* CocoaActiveModelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaActiveModelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6722674168CC5A3000F2EA0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
