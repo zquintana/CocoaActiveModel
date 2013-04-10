@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author       = { "Zachary Quintana" => "zach.quintana@gmail.com" }
   s.source       = { :git => "http://github.com/zquintana/CocoaActiveModel.git" }
   
-  s.source_files = "Code/**/*.{h,m}"
+  s.source_files = "Code/*.{h,m}"
   s.requires_arc = false
   
 end
