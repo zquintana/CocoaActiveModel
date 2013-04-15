@@ -68,7 +68,6 @@
 		B6722657168CC5A3000F2EA0 = {
 			isa = PBXGroup;
 			children = (
-				B6722668168CC5A3000F2EA0 /* Support */,
 				B6722696168CC5AF000F2EA0 /* Code */,
 				B672267C168CC5A3000F2EA0 /* Tests */,
 				B6722664168CC5A3000F2EA0 /* Frameworks */,
@@ -124,6 +123,7 @@
 		B6722696168CC5AF000F2EA0 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				B6722668168CC5A3000F2EA0 /* Support */,
 				B672266A168CC5A3000F2EA0 /* CocoaActiveModel.h */,
 				B6722697168CC5C8000F2EA0 /* CActiveModel.h */,
 				B6722698168CC5C8000F2EA0 /* CActiveModel.m */,
@@ -337,8 +337,8 @@
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
@@ -363,8 +363,8 @@
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Support/CocoaActiveModel-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Code/Support/CocoaActiveModel-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
