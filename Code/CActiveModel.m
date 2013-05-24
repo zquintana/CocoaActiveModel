@@ -85,8 +85,8 @@
 
 - (NSString *)getString:(id)key
 {
-    NSString *value = (NSString *)[self get:key];
-    return (value) ? value : @"";
+    id value = [self get:key];
+    return (value) ? [NSString stringWithFormat:@"%@", value] : @"";
 }
 
 - (NSNumber *)getNumber:(id)key
